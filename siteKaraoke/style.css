@@ -1,0 +1,510 @@
+/* Reset e estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1027;
+  color: #ffffff;
+  padding: 1em 2em;
+}
+
+/* Logo */
+.logo-container .logo {
+  width: 175px;
+  margin-left: 70px;
+}
+
+/* Botões de Navegação */
+.nav-buttons {
+  margin-left: -70px;
+  gap: 20px;
+}
+
+.nav-button {
+  background-color: #1e1027;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #30004e;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 7%;
+}
+
+.icon {
+  width: 75px;
+  cursor: pointer;
+}
+
+/* Seção Home */
+/* Seção Home */
+/* Seção Home */
+#home {
+  padding: 2em;
+  background-color: #1e1027; /* Cor de fundo leve para destaque */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-container {
+  flex: 1;
+  color: #ffffff;
+  margin-left: 40px;
+  margin-top: -120px;
+}
+
+.text-container h2 {
+  font-size: 2.5em; /* Tamanho maior do título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.text-container p {
+  font-size: 1.2em; /* Aumenta o tamanho do texto */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+}
+
+/* Botão Agendar */
+.agendar-button {
+  background-color: #ffffff; /* Cor de fundo laranja */
+  color: #000000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agendar-button:hover {
+  background-color: #b6b6b6; /* Cor mais escura quando o mouse passa */
+}
+
+/* Imagem */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
+}
+
+/* Seção de Feedbacks */
+#feedbacks {
+  padding: 3em;
+  background-color: #1e1027; /* Cor de fundo clara */
+  text-align: center;
+}
+
+#feedbacks h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Container dos feedbacks */
+.feedbacks-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Grid responsivo */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Item de feedback */
+.feedback-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.feedback-item:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Imagem do feedback */
+.feedback-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: 10px;
+}
+/* Estilo para o botão de redirecionamento */
+.google-review-button {
+  margin-top: 40px;
+}
+
+.google-review-button a {
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.google-review-button a:hover {
+  background-color: #969696; /* Cor do botão ao passar o mouse */
+}
+
+#videos {
+  padding: 3em;
+  background-color: #1e1027;
+  text-align: center;
+  color: #fff;
+}
+
+#videos h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.video-item {
+  flex: 1;
+  max-width: 40%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.video-item video {
+  width: 100%;
+  height: 500px; /* Altura do vídeo */
+  border-radius: 5px;
+}
+
+#diferenciais {
+  padding: 3em;
+  background-color: #1e1027; /* Cor de fundo suave */
+  color: #fff;
+  text-align: center;
+}
+
+#diferenciais h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.diferenciais-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.diferencial-item {
+  flex: 1;
+  background-color: #1a002b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.diferencial-item:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.diferencial-icon {
+  width: 50px; /* Tamanho dos ícones */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.diferencial-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.diferencial-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+#sobre {
+  padding: 3em;
+  background-color: #1e1027; /* Cor de fundo suave */
+  color: #fff;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.sobre-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+
+.sobre-texto,
+.sobre-missao,
+.sobre-valores {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-texto h3,
+.sobre-missao h3,
+.sobre-valores h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.sobre-texto p,
+.sobre-missao p,
+.sobre-valores ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.sobre-valores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sobre-valores li {
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre-container {
+    grid-template-columns: 1fr; /* Empilhamento em telas menores */
+  }
+}
+
+/* Estilos para o Footer */
+footer {
+  background-color: #190127;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 5px 0;
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Ajuste no layout das seções */
+  .content {
+    flex-direction: column; /* Empilha o conteúdo em telas menores */
+    align-items: center;
+  }
+
+  .text-container,
+  .image-container {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Imagem do home */
+  .home-image {
+    max-width: 100%; /* Ajusta imagem para caber melhor */
+    margin-top: 20px;
+  }
+
+  /* Ajuste para a seção de feedbacks */
+  .feedbacks-container {
+    grid-template-columns: 1fr 1fr; /* 2 colunas em telas menores */
+  }
+
+  /* Ajuste para a seção de vídeos */
+  .videos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-item {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Ajuste para a seção de diferenciais */
+  .diferenciais-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diferencial-item {
+    max-width: 90%; /* Reduz o tamanho para telas menores */
+    margin-bottom: 20px;
+  }
+
+  /* Ajuste para a seção sobre */
+  .sobre-container {
+    grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
+  }
+
+  /* Ajuste para a navegação */
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Ajuste nos ícones sociais */
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Ajuste no botão agendar */
+  .agendar-button {
+    font-size: 1.1em;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para a navegação */
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Ajuste no tamanho da logo */
+  .logo-container .logo {
+    width: 150px;
+  }
+
+  /* Ajuste nos vídeos */
+  .video-item video {
+    height: 300px; /* Reduz a altura para dispositivos menores */
+  }
+
+  /* Ajuste na seção home */
+  .home-image {
+    max-width: 90%;
+  }
+
+  /* Ajustes nos feedbacks */
+  .feedbacks-container {
+    grid-template-columns: 1fr; /* Feedbacks em uma coluna */
+  }
+
+  /* Ajuste no footer */
+  footer p {
+    font-size: 0.9em; /* Menor fonte no footer */
+  }
+}
+/* Responsividade para o Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;
+    padding: 2em;
+  }
+
+  .social-icons {
+    flex-direction: row;
+  }
+
+  .content {
+    margin-top: 100px;
+  }
+
+  .logo-container .logo {
+    width: 150px; /* Reduz o tamanho da logo */
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: flex-start;
+    margin-left: 0;
+    gap: 10px;
+    margin-top: 10px; /* Espaço entre a logo e os botões */
+  }
+
+  .nav-button {
+    font-size: 1.5em; /* Reduz o tamanho da fonte para dispositivos móveis */
+    padding: 8px 15px; /* Ajuste no padding */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Adiciona um espaçamento entre os botões de navegação e os ícones sociais */
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha em telas menores */
+    justify-content: flex-start; /* Alinha os ícones à esquerda */
+  }
+
+  .icon {
+    width: 50px; /* Reduz o tamanho dos ícones sociais */
+  }
+}
